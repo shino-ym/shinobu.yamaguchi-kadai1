@@ -34,20 +34,20 @@ $ sudo chmod -R 777 src/*
 
 ## 使用技術
 
-・PHP 8.4.10
-・laravel 8.75
-・MySQL 8.0.36
-・CSS
-・HTML
+- PHP 8.4.10
+- laravel 8.75
+- MySQL 8.0.36
+- CSS
+- HTML
 
 ## ER図
 
-
+![ER図](./images/er-drawio.png)
 
 
 ## URL
-・loginフォームからスタート　http://localhost/login
-・お問合せページからスタート　http://localhost
+- loginフォームからスタート　http://localhost/login
+- お問合せページからスタート　http://localhost
 
 - 開発環境：http://localhost
 - phpMyAdmin:：http://localhost:8080/
