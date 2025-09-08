@@ -4,8 +4,8 @@
 
 **Dockerビルド**
 Estra-Coachtechより開発環境をクローン
-1. `git clone git@github.com:shino-ym/shinobu.yamaguchi-kadai1.git
-2. `docker-compose up -d --build`
+1. git clone git@github.com:shino-ym/shinobu.yamaguchi-kadai1.git
+2. docker-compose up -d --build
 
 ＊MySQLは、OSによって移動しない場合があるので、それぞれのpcに合わせてdocker-compose.ymlファイルを編集してください。
 
@@ -42,7 +42,7 @@ $ sudo chmod -R 777 src/*
 
 ## ER図
 
-![ER図](./images/er-drawio.png)
+![ER図](./images/er_diagram-1.png)
 
 
 ## URL
