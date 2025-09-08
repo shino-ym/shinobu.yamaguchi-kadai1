@@ -1,0 +1,248 @@
+/* ページ全体の余白 */
+.contact-form__content {
+    max-width: 800px;
+    /* フォーム最大幅 */
+    width: 100%;
+    /* 画面幅に合わせる */
+    margin: 0 auto;
+    /* 横中央 */
+    padding: 10px 30px;
+}
+
+/* タイトルをフォームの上に表示・中央揃え */
+.form-title {
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    /* フォームとの間隔 */
+    color: #8B7969;}
+
+
+
+h2 {
+    font-family: 'Inika', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #8B7969;/* フォーム内のグループ */
+}
+
+.form-wrapper {
+.header {
+        display: flex;
+        align-items: center;
+        /* 縦方向中央揃え */
+        justify-content: center;
+        /* 左右に広げる */
+        padding: 0 50px;
+        background-color: #fff !important;
+        width: 1512px;
+        height: 100px;
+        transform: rotate(0deg);
+        opacity: 1;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #000;
+    }
+
+    .header__inner {
+        display: flex;
+        /* height: 100px; */
+        align-items: center;
+        /* 縦方向を中央揃え */
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+    .header__logo {
+        font-family: 'Inika', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: center;
+        vertical-align: middle;
+        color: #8B7969;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    /* body を縦方向の flex にして、ヘッダーを上に固定 */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        /* 画面全体の高さを確保 */
+        margin: 0;
+    }
+
+    /* main はヘッダーの下で残りを占める */
+    main {
+        flex: 1 0 auto;
+    }}
+
+.required{
+    color: red;
+}
+/* 各フォームグループ */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;/* 小さい画面でも崩れない */
+    margin-bottom: 10px;/* ここで縦の間隔を調整 */
+    align-items: center;/* ラベルと入力欄を縦中央に揃える */
+}
+
+
+/* ラベル */
+.form__label--item {
+    width: 150px;/* 固定幅で揃える */
+    text-align: left;/* 左寄せ */
+    margin-right: 10px;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.name-box {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.name-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* 入力欄の下にエラーを配置 */
+}
+
+
+/* ラジオボタン・セレクト用の横並び */
+.input-box--inline {
+    display: flex;
+    align-items: center;
+    gap: 20px;/* ボタン間の間隔 */
+}
+
+/* ラジオボタン＋文字のセットはくっつける */
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;/* 別のセットとの間隔 */
+}
+
+/* ボタンと文字の間隔は最小限 */
+.radio-item input {
+    margin-right: 5px;
+}
+
+/* 電話番号や名前の複数入力欄は横並びに */
+.form-group input[type="tel"]:not(:first-child) {
+    margin-left: 5px;
+}
+
+.tel-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* 入力欄の下にエラーを配置 */
+}
+
+.form-group input[type="tel"] {
+    text-align: center;
+}
+
+/* 複数入力欄をまとめる */
+.input-box {
+    display: flex;
+    gap: 5px;/* 複数入力欄の間隔 */
+    flex: 1;/* 残り幅を占める */
+    width: 100%;
+    font-size: 12px;
+}
+.input-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* 入力欄の下にエラーを配置 */
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background-color: #eeebeb;
+    box-sizing: border-box;
+    color: #BEB1A6;;
+}
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    /* 右に矢印スペース確保 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    appearance: none;
+    /* デフォルト矢印消す */
+}
+
+.select-wrapper .arrow-large {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/* textarea を含む form-group だけ縦並び */
+.form-group--textarea {
+    flex-direction: column;
+    align-items: flex-start;
+    /* 左寄せ */
+}
+
+.form-group--textarea .form__label--item {
+    width: auto;
+    /* 横幅固定を解除 */
+    margin-bottom: 8px;
+}
+
+.form-group--textarea .input-box {
+    width: 100%;
+}
+/* 送信ボタン中央 */
+.form__button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form__button-submit {
+    padding: 10px 20px;
+    border: none;
+    background-color: #82756A;;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__error{
+    font-size: 12px;
+    color: red;
+    margin-top: 4px; /* 入力欄との間隔 */
+    display:block;
+}

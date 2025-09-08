@@ -1,0 +1,60 @@
+.thankyou-page {
+    position: relative;
+    text-align: center;
+    height: 80vh;
+    /* 画面の高さに合わせる */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    /* 必要に応じて背景色変更 */
+}
+
+.thankyou-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    /* 大きさ調整 */
+    color: rgba(0, 0, 0, 0.05);
+    /* 薄い文字 */
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.thankyou-content {
+    position: relative;
+    z-index: 2;
+    /* 背景より前に表示 */
+}
+
+.thankyou-content h2 {
+    font-size: 2rem;
+    color: #9D896C;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #9D896C;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .thankyou-bg {
+        font-size: 4rem;
+    }
+
+    .thankyou-content h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,50 @@
+
+
+.header {
+width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #8B7969;
+}
+
+.header__inner {
+    display: flex;/* height: 100px; */
+    align-items: center;/* 縦方向を中央揃え */
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.header__logo {
+font-family: 'Inika', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #8B7969;
+    text-decoration: none;
+    padding: 0;
+}
+
+/* body を縦方向の flex にして、ヘッダーを上に固定 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* 画面全体の高さを確保 */
+    margin: 0;
+}
+
+/* main はヘッダーの下で残りを占める */
+main {
+    flex: 1 0 auto;
+}

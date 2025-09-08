@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    align-items: center;
+    /* 縦方向中央揃え */
+    justify-content: space-between;
+    /* 左右に広げる */
+    padding: 0 50px;
+    background-color: #fff;
+    width: 1512px;
+    height: 100px;
+    opacity: 1;
+    border-width: 1px;
+}
+
+.header__inner {
+    display: flex;
+    /* height: 100px; */
+    align-items: center;
+    /* 縦方向を中央揃え */
+    justify-content: space-between;
+    /* 左右に配置（ロゴ左・ボタン右） */
+    margin: 0 auto;
+    /* padding: 20px 15px; */
+    max-width: 1230px;
+}
+
+.header-utilities{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* 縦中央揃え */
+    justify-content: center;
+    /* ロゴをど真ん中に */
+    height: 64px;
+    padding: 0 16px;
+}
+.header__logo {
+    display: flex;
+    text-align:center;
+    align-items: center;
+    /* 縦方向の中央揃え */
+    justify-content: center;
+    /* 一旦全体を中央揃え */
+    position: relative;
+    color: ;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 0 100px;
+}
+.form-item{
+    color: #9D896C;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    /* 右端に配置 */
+    padding: 8px 16px;
+    color: #a58a12;
+    border: none;
+    text-decoration: none;
+    /* border-radius: 6px; */
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.header-nav .nav-link {
+    padding: 5px 16px;
+    color: #9D896C;
+    font-size: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #aaa; /* 外枠 */
+    border-radius: 0; /* 四角に */
+    text-decoration: none;
+    transition: all 0.2s ease;}
+
+body {
+        background-color: #F7EFE3;
+    }
