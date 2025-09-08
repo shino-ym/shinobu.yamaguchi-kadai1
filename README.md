@@ -42,7 +42,7 @@ $ sudo chmod -R 777 src/*
 
 ## ER図
 
-![ER図](./images/er_diagram-1.png)
+![ER図](images/er_diagram-2.png)
 
 
 ## URL
